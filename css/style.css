@@ -1,0 +1,85 @@
+.COn {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+
+.COff {
+	-webkit-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+
+.CBody {
+	display: inline-block;
+	vertical-align: top;
+	cursor: move;
+}
+
+.CNavigation {
+	display: inline-block;
+	border: thin solid green;
+	width: 50px;
+	height: 180px;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: middle;
+	line-height: 180px;
+	font-weight: bold;
+}
+
+.SlideContainer {
+	width: 250px;
+	height: 180px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	border: thin solid blue;
+}
+
+.CarouselContainer {
+	display: flex;
+	height: 99vh;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	border: 1px red solid;
+}
+
+.CarouselSlides {
+	width: 750px;
+	display: flex;
+	border: thin solid red;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.SlideImg {
+	width: 230px;
+	height: 155px;
+}
+
+
+@media screen and (max-width: 599px) {
+	.CarouselSlides {
+		width: 250px;
+	}
+
+	.SlideImg {
+		width: 190px;
+		height: 125px;
+	}
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 849px) {
+	.CarouselSlides {
+		width: 500px;
+	}
+}

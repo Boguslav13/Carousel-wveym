@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Carousel move slide by slide</title>
+		<meta name="author" content="Boguslav Koledinskiy">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css?">
+</head>
+<body>
+
+
+<!-- Carousel HTML code starts here-->
+<div class="CarouselContainer">
+  <div>
+		<div onclick="SlideShow( 'Carousel' , '-1' )" class="CNavigation">
+			&lt;=
+		</div>
+
+		<div class="CBody">
+			<div id=Carousel class="CarouselSlides">
+	
+				<div class="Slide COn">
+					<div class="SlideContainer" ondragstart="return false;" ondrop="return false;">
+						<h1>A text slide #0</h1>
+					</div>
+				</div>
+	
+				<div class="Slide COn">
+					<div class="SlideContainer" ondragstart="return false;" ondrop="return false;">
+						<img src="img/1.jpg" class="SlideImg">
+					</div>
+				</div>
+	
+				<div class="Slide COn">
+					<div class="SlideContainer" ondragstart="return false;" ondrop="return false;">
+						<img src="img/2.jpg" class="SlideImg">
+					</div>
+				</div>
+	
+				<div class="Slide COn">
+					<div class="SlideContainer" ondragstart="return false;" ondrop="return false;">
+						<img src="img/3.jpg" class="SlideImg">
+					</div>
+				</div>
+
+				<div class="Slide COn">
+					<div class="SlideContainer" ondragstart="return false;" ondrop="return false;">
+						<img src="img/4.jpg" class="SlideImg">
+					</div>
+				</div>
+	
+				<div class="Slide COn">
+					<div class="SlideContainer" ondragstart="return false;" ondrop="return false;">
+						<img src="img/5.jpg" class="SlideImg">
+					</div>
+				</div>
+
+				<div class="Slide COn">
+					<div class="SlideContainer" ondragstart="return false;" ondrop="return false;">
+						<h1>A test slide #6</h1>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div onclick="SlideShow( 'Carousel' , '+1' )" class="CNavigation">
+			=&gt;
+		</div>
+
+  </div>
+</div>
+<!-- Carousel HTML code ends here-->
+
+<script src="js/Carousel-move_slide_by_slide.js"></script>
+	</body>
+</html>
